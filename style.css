@@ -1,6 +1,7 @@
 body {
-    background-color: #121212;
-    color: white;
+    /* Novo Fundo: Azul bem escuro */
+    background-color: #0a192f;
+    color: #ccd6f6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
@@ -10,22 +11,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #e50914;
+    /* Linha detalhe em Dourado */
+    border-bottom: 2px solid #f6c867;
     padding-bottom: 10px;
 }
 
 #addMovieBtn {
-    background-color: #e50914;
-    color: white;
+    /* Botão Dourado */
+    background-color: #f6c867;
+    color: #0a192f;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.2s;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 #addMovieBtn:hover {
     transform: scale(1.05);
+    background-color: #ffda8a;
 }
 
 #library {
@@ -36,17 +41,20 @@ header {
 }
 
 .movie-card {
-    background-color: #1f1f1f;
+    /* Fundo do card um pouco mais claro que o fundo principal */
+    background-color: #172a45;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
 }
 
-/* 🎥 Animação de aumentar o card ao passar o mouse */
+/* 🎥 Animação de aumentar o card e brilho dourado */
 .movie-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 10px 20px rgba(246, 200, 103, 0.2);
+    border: 1px solid #f6c867;
 }
 
 .movie-card img {
@@ -57,4 +65,5 @@ header {
 .rating {
     font-size: 1.2rem;
     margin: 10px 0;
+    color: #f6c867; /* Cor da pipoca dourada */
 }
